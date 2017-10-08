@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: post
 title: SGD에서 배치 사이즈가 학습과 성능에 미치는 영향
 comments: true
+excerpt: test excerpt
 ---
 
 
