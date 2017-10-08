@@ -41,7 +41,7 @@ title: SGD에서 배치 사이즈가 학습과 성능에 미치는 영향
 
  [Keskar et al(2017)](https://www.openreview.net/pdf?id=H1oyRlYgg)에 따르면 배치 사이즈가 커질수록 일반화 성능이 떨어지는 현상이 관측되었다. 이를 [Keskar et al(2017)](https://www.openreview.net/pdf?id=H1oyRlYgg)은 배치 사이즈가 커질수록 'sharp minimizer'로 수렴하기 때문이라고 주장하였다. 'sharp minimizer'는 아래 그림에서 'sharp minimum'과 같이 로스 함수의 굴곡이 커서 학습과 테스트 시 조금만 어긋나도 성능이 급격하게 변하는 지점의 개념으로 이해할 수 있다.
  
- ![sharp_minimzer](https://github.com/hongdoki/hongdoki.github.io/blob/master/assets/sharpminimizer.PNG)
+ ![sharp_minimzer](https://github.com/hongdoki/hongdoki.github.io/blob/master/assets/sharpminimizer.PNG?raw=true)
  *'sharp minimizer'의 개념도. x축은 파라미터 y축은 로스 함수의 값을 의미한다. (출처: [Keskar et al(2017)](https://www.openreview.net/pdf?id=H1oyRlYgg))*
  
 
