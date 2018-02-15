@@ -42,7 +42,7 @@ excerpt: test excerpt
 #### 3. 모델
 * 유명 구조의 모델(VGG, ResNet, DenseNet 등)과 전이 학습(Transfer Learning) 방식은 사용하지 않았다. 일반적으로 성능이 좋다고 알려진 구조의 모델 중 이미지넷(ImageNet) 등을 통해 미리 학습된 모델(pre-trained model)을 가져와서 재학습하는 방식이 성능이 좋다고 알려져 있는데, 내가 시도해본 미리 학습된 모델들은 초기에 학습 로스가 빨리 줄어들지만, 검증 로스가 줄어들지 않는 과적합 문제가 심각하였고, 본 대회의 데이터가 미리 학습할 때 사용한 이미지와는 성격이 많이 다르다고 생각하여 새로운 모델을 바닥부터 학습하는 방식을 사용해보기로 하였다.
 * 기본 구조는 **컨볼루션(Convolution)-활성화(Activation)-풀링(Pooling)**을 기반으로 컨볼루션 레이어 혹은 필터의 수를 변경해보거나 활성화 혹은 풀링 방법을 바꿔보거나 레즈넷(ResNet)에서 착안해서 스킵 커넥션(skip connection)을 추가해 보기도 하였고, 가장 심한 문제였던 과적합을 피하고자 **배치노말리제이션(batch normalization)**과 **드랍아웃(drop out)**을 모두 사용해 보았다.
-* 최종으로 사용하였던 모델 구조는 아래와 같았다. 그리고 성능은 [비공개 순위](#공개-순위-과적합)에서 log loss 0.14 정도를 달성하였다.
+* 최종으로 사용하였던 모델 구조는 아래와 같았다. 그리고 성능은 [공개 순위](#공개-순위-과적합)에서 log loss 0.14 정도를 달성하였다.
     * 파이토치(PyTorch) 프레임워크로 구성한 모델 "StatoilNet" 구조
 		
 		![architecture](https://github.com/hongdoki/hongdoki.github.io/blob/master/assets/statoil/architecture.PNG?raw=true)
@@ -72,7 +72,11 @@ excerpt: test excerpt
 이번 대회에서 나의 성적은 상의 7% 정도에 해당하는 226위 였고, 상위 10%까지 인정해주는 캐글내에서의 브론즈 배지를 받아 소소한 성취감을 얻을 수 있었다. 하지만 성적도 성적이지만 대회에 도전하면서 다양한 사람들의 방법론이나 의견을 보고, 어떻게 하면 성능이 좋아질까 고민해보면서 배움을 얻을 수 있었던 것이 나에게는 가장 큰 성과였다. 물론 3위안에 들어서 상금을 얻었다면 더 좋았겠지만, 이는 다음 기회로 미루어 놓아야겠다.
 
 
+### 부록: 코드
 
+대회를 진행하면서 사용했던 코드들 중에 몇가지를 모아서 아래 링크에 올려 놓았다.
+
+링크: [https://github.com/hongdoki/statoil-iceberg-classifier-challenge](https://github.com/hongdoki/statoil-iceberg-classifier-challenge)
 
  
  
