@@ -11,7 +11,7 @@ comments: true
 ![stats_papers.png](https://github.com/hongdoki/hongdoki.github.io/blob/master/assets/bmvc_2018/stats_papers.PNG?raw=true)
 *2016 ~ 2018에 BMVC로 제출된 논문 수, BMVC 2018에서 채택된 논문의 지역 분포*
 
-BMVC 2018는 [구성원의 성장을 적극 장려하는 훌륭한 회사](http://sualab.com)의 지원을 받아 견학의 목적으로 다녀왔는데, 다녀온 뒤 흥미로웠던 키노트 1개와 논문 5개를 시간이 지났지만 글로 남기고자 한다.
+BMVC 2018는 견학의 목적으로 다녀왔는데, 다녀온 뒤 흥미로웠던 키노트 1개와 논문 5개를 시간이 지났지만 글로 남기고자 한다.
 
 ### 키노트: 휴먼 비전과 컴퓨터 비전에서 '대칭성'의 역할
 
